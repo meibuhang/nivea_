@@ -121,7 +121,7 @@ a {
     justify-content: space-between;
     font-weight: lighter;
     font-size: 15px;
-    padding: 25px 10px;
+    padding: 10px 10px;
 }
 
 .box {
@@ -176,7 +176,7 @@ a {
     }
     #footerNote {
         flex-direction: column;
-        padding: 0;
+        padding-top: 5%;
         margin: 0;
     }
     .noteEnd {
@@ -189,6 +189,6 @@ a {
         text-align: center;
     }
     #boxEnd {
-        padding: 10px 0;
+        padding: 0;
     }
 }
