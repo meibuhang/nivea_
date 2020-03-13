@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Nivea Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Nivea Regular'), url('../font/Nivea-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Nivea Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Nivea Bold'), url('../font/Nivea-Bold.woff') format('woff');
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Nivea Regular';
+    background: url("../image/nivea_hijab_newsletter.jpg") no-repeat fixed;
+    /*no-repeat center center fixed */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgb(0, 6, 87);
+}
+
+a {
+    font-family: 'Nivea Bold';
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(0, 6, 87);
+}
+
+.header {
+    margin: 0 5% 5% 5%;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+
+#wrapper {
+    margin: -5% 20% 0 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#content {
+    width: 90%;
+    padding: 0;
+}
+
+#content p {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 180%;
+}
+
+#submit {
+    margin: 15% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit button {
+    background-color: rgb(0, 6, 87);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 30px;
+    font-family: 'Nivea Regular';
+}
+
+#footer {
+    margin: 3% 5%;
+    clear: both;
+    overflow: hidden;
+}
+
+#footer ul {
+    padding: 12px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#footer ul li {
+    display: inline-block;
+    padding-right: 2%;
+    margin: 0;
+    text-align: center;
+}
+
+#footer img {
+    width: 35px;
+    height: 35px;
+}
+
+.divider {
+    /* padding: 4rem 2rem; */
+    width: 100%;
+}
+
+.line {
+    margin: auto;
+    height: 3px;
+    background-color: rgb(0, 6, 87);
+}
+
+#footerNote {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 25px 10px;
+}
+
+.box {
+    display: block;
+    width: 100%;
+}
+
+.box p {
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+#boxEnd {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 25px 10px;
+}
+
+.noteEnd {
+    text-align: center;
+}
+
+.noteEnd>span {
+    font-weight: bold;
+    margin: 0;
+}
+
+.noteEnd>p {
+    line-height: 15%;
+}
+
+@media screen and (max-width:1024px) {
+    p, span {
+        font-size: 3.5vw;
+    }
+    #content {
+        width: 100%;
+    }
+    #content p {
+        font-size: 4vw;
+    }
+    #submit button {
+        font-size: 3vw;
+        padding: 10px;
+        display: block;
+        margin: 0.4em auto;
+    }
+    #footer img {
+        width: 40px;
+        height: 40px;
+    }
+    #footerNote {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .noteEnd {
+        text-align: center;
+    }
+    .noteEnd>p {
+        line-height: 180%;
+    }
+    .box>p {
+        text-align: center;
+    }
+    #boxEnd {
+        padding: 10px 0;
+    }
+}
